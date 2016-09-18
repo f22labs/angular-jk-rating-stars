@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  angular.module('jkAngularRatingStars', [
-    'jkAngularRatingStars.templates'
+  angular.module('angular-star-rating', [
+    'angular-star-rating.templates'
   ]);
 }());

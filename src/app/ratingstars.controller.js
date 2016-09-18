@@ -63,7 +63,7 @@
   }
 
   angular
-    .module('jkAngularRatingStars')
+    .module('angular-star-rating')
     .controller('RatingStarsController', [
       '$attrs', '$timeout',
       RatingStarsController

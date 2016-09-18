@@ -5,7 +5,7 @@
     templateCache = require('gulp-angular-templatecache'),
     size = require('gulp-size'),
     templateCacheOptions = {
-      module: 'jkAngularRatingStars.templates',
+      module: 'angular-star-rating.templates',
       moduleSystem: 'IIFE',
       standalone: true,
       root: ''

@@ -29,9 +29,9 @@ Demo : https://embed.plnkr.co/q7pgHz/
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ```
 
- - Add a dependency to the `jkAngularRatingStars` module in your application.
+ - Add a dependency to the `angular-star-rating` module in your application.
 ```js
-angular.module('MyApp', ['jkAngularRatingStars']);
+angular.module('MyApp', ['angular-star-rating']);
 ```
 
  - Add a `jk-rating-stars` tag to your html, set the amount of stars and bind a variable that will holds the selected value. If the maxRating variable is not set, we use the default of 5.
