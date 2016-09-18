@@ -9,6 +9,10 @@
       that.readOnly = false;
     }
 
+    if (that.resetRequried === undefined) {
+      that.resetRequried = false;
+    }
+
     that.initStarsArray = function() {
       that.starsArray = that.getStarsArray();
       that.validateStars();

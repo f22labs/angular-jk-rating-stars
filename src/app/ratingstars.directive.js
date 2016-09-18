@@ -27,7 +27,8 @@
         maxRating: '@?',
         rating: '=?',
         readOnly: '=?',
-        onRating: '&'
+        onRating: '&',
+        resetRequired: '=?'
       },
       link: link
     };
