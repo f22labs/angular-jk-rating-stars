@@ -1,19 +1,19 @@
 {
-  "name": "angular-jk-rating-stars",
+  "name": "angular-star-rating",
   "version": "1.0.3",
   "description": "Amazing rating stars directive for angular material",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/juank11memphis/angular-jk-rating-stars.git"
+		"url": "git://github.com/juank11memphis/angular-star-rating.git"
 	},
   "scripts": {
     "prepublish": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/juank11memphis/angular-jk-rating-stars/issues"
+    "url": "https://github.com/juank11memphis/angular-star-rating/issues"
   },
-  "homepage": "https://github.com/juank11memphis/angular-jk-rating-stars#readme",
+  "homepage": "https://github.com/juank11memphis/angular-star-rating#readme",
 	"author": "Juan Carlos Morales Mora <juank.memphis@gmail.com>",
   "license": "MIT",
   "keywords": [

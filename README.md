@@ -7,10 +7,10 @@ Demo : https://embed.plnkr.co/q7pgHz/
 ## Install :
 
 ### npm
-`npm install angular-jk-rating-stars`
+`npm install angular-star-rating`
 
 ### bower
-`bower install angular-jk-rating-stars`
+`bower install angular-star-rating`
 
 ## Usage :
 
