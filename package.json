@@ -1,20 +1,20 @@
 {
   "name": "angular-star-rating",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "Amazing rating stars directive for angular material",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/juank11memphis/angular-star-rating.git"
+		"url": "git@github.com:f22labs/angular-star-rating.git"
 	},
   "scripts": {
     "prepublish": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/juank11memphis/angular-star-rating/issues"
+    "url": "https://github.com/f22labs/angular-star-rating/issues"
   },
-  "homepage": "https://github.com/juank11memphis/angular-star-rating#readme",
-	"author": "Juan Carlos Morales Mora <juank.memphis@gmail.com>",
+  "homepage": "https://github.com/f22labs/angular-star-rating#readme",
+	"author": "F22Labs <hari@f22labs.com>",
   "license": "MIT",
   "keywords": [
     "angular",
