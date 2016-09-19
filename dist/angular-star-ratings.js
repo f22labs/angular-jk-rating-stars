@@ -121,7 +121,7 @@
 
   angular
     .module('angular-star-ratings')
-    .directive('jkRatingStars', [
+    .directive('angularStarRatings', [
     RatingStarsDirective
   ]);
 
