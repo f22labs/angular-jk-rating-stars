@@ -1,7 +1,8 @@
 {
   "name": "angular-star-ratings",
   "description": "Amazing rating stars directive for angular material",
-  "main": "",
+  "main": ["./dist/angular-star-ratings.min.css",
+    "./dist/angular-star-ratings.min.js"],
   "authors": [
     "Juan Carlos Morales Mora <juank.memphis@gmail.com>"
   ],
