@@ -17,6 +17,10 @@
       that.readOnly = false;
     }
 
+    if (that.resetRequried === undefined) {
+      that.resetRequried = false;
+    }
+
     that.initStarsArray = function() {
       that.starsArray = that.getStarsArray();
       that.validateStars();
@@ -108,7 +112,8 @@
         maxRating: '@?',
         rating: '=?',
         readOnly: '=?',
-        onRating: '&'
+        onRating: '&',
+        resetRequired: '=?'
       },
       link: link
     };
@@ -122,4 +127,4 @@
 
 }());
 
-(function(){angular.module("angular-star-rating.templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("rating-stars-directive.html","<div\n  class=\"jk-rating-stars-container\"\n  layout=\"row\" >\n\n  <a\n    class=\"button\"\n    ng-click=\"ctrl.setRating(0)\"\n    ng-if=\"!ctrl.readOnly\" >\n    <i class=\"material-icons\">remove_circle_outline</i>\n  </a>\n\n  <a\n    class=\"button star-button\"\n    ng-class=\"item.class\"\n    ng-mouseover=\"ctrl.setMouseOverRating($index + 1)\"\n    ng-mouseleave=\"ctrl.setMouseOverRating(ctrl.rating)\"\n    ng-click=\"ctrl.setRating($index + 1)\"\n    ng-repeat=\"item in ctrl.starsArray\" >\n    <i class=\"material-icons\">star</i>\n  </a>\n\n</div>\n");}]);})();
+(function(){angular.module("angular-star-rating.templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("rating-stars-directive.html","<div\n  class=\"jk-rating-stars-container\"\n  layout=\"row\" >\n\n  <a\n    class=\"button\"\n    ng-click=\"ctrl.setRating(0)\"\n    ng-if=\"!(ctrl.readOnly || (!ctrl.resetRequried))\" >\n    <i class=\"material-icons\">remove_circle_outline</i>\n  </a>\n\n  <a\n    class=\"button star-button\"\n    ng-class=\"item.class\"\n    ng-mouseover=\"ctrl.setMouseOverRating($index + 1)\"\n    ng-mouseleave=\"ctrl.setMouseOverRating(ctrl.rating)\"\n    ng-click=\"ctrl.setRating($index + 1)\"\n    ng-repeat=\"item in ctrl.starsArray\" >\n    <i class=\"material-icons\">star</i>\n  </a>\n\n</div>\n");}]);})();
