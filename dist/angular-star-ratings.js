@@ -1,8 +1,8 @@
 (function() {
   'use strict';
 
-  angular.module('angular-star-rating', [
-    'angular-star-rating.templates'
+  angular.module('angular-star-ratings', [
+    'angular-star-ratings.templates'
   ]);
 }());
 
@@ -75,7 +75,7 @@
   }
 
   angular
-    .module('angular-star-rating')
+    .module('angular-star-ratings')
     .controller('RatingStarsController', [
       '$attrs', '$timeout',
       RatingStarsController
@@ -120,11 +120,11 @@
   }
 
   angular
-    .module('angular-star-rating')
+    .module('angular-star-ratings')
     .directive('jkRatingStars', [
     RatingStarsDirective
   ]);
 
 }());
 
-(function(){angular.module("angular-star-rating.templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("rating-stars-directive.html","<div\n  class=\"jk-rating-stars-container\"\n  layout=\"row\" >\n\n  <a\n    class=\"button\"\n    ng-click=\"ctrl.setRating(0)\"\n    ng-if=\"!(ctrl.readOnly || (!ctrl.resetRequried))\" >\n    <i class=\"material-icons\">remove_circle_outline</i>\n  </a>\n\n  <a\n    class=\"button star-button\"\n    ng-class=\"item.class\"\n    ng-mouseover=\"ctrl.setMouseOverRating($index + 1)\"\n    ng-mouseleave=\"ctrl.setMouseOverRating(ctrl.rating)\"\n    ng-click=\"ctrl.setRating($index + 1)\"\n    ng-repeat=\"item in ctrl.starsArray\" >\n    <i class=\"material-icons\">star</i>\n  </a>\n\n</div>\n");}]);})();
+(function(){angular.module("angular-star-ratings.templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("rating-stars-directive.html","<div\n  class=\"angular-star-ratings-container\"\n  layout=\"row\" >\n\n  <a\n    class=\"button\"\n    ng-click=\"ctrl.setRating(0)\"\n    ng-if=\"!(ctrl.readOnly || (!ctrl.resetRequried))\" >\n    <i class=\"material-icons\">remove_circle_outline</i>\n  </a>\n\n  <a\n    class=\"button star-button\"\n    ng-class=\"item.class\"\n    ng-mouseover=\"ctrl.setMouseOverRating($index + 1)\"\n    ng-mouseleave=\"ctrl.setMouseOverRating(ctrl.rating)\"\n    ng-click=\"ctrl.setRating($index + 1)\"\n    ng-repeat=\"item in ctrl.starsArray\" >\n    <i class=\"material-icons\">star</i>\n  </a>\n\n</div>\n");}]);})();

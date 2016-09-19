@@ -35,7 +35,7 @@
   }
 
   angular
-    .module('angular-star-rating')
+    .module('angular-star-ratings')
     .directive('jkRatingStars', [
     RatingStarsDirective
   ]);

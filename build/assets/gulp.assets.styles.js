@@ -20,15 +20,15 @@
       }))
       .on('error', handleError)
       .pipe(autoprefixer('last 1 version')) //Adds vendor prefixes (mozilla,webkit,etc) to the css styles
-      .pipe(concat('jk-rating-stars.css'))
+      .pipe(concat('angular-star-ratings.css'))
       .pipe(gulp.dest('.tmp'))
       .pipe(size());
   });
 
   gulp.task('assets-sass-prod', ['assets-sass-dev'], function() {
-    return gulp.src(['.tmp/jk-rating-stars.css'])
+    return gulp.src(['.tmp/angular-star-ratings.css'])
       .pipe(csso())
-      .pipe(concat('jk-rating-stars.min.css'))
+      .pipe(concat('angular-star-ratings.min.css'))
       .pipe(gulp.dest('.tmp'))
       .pipe(size());
   });

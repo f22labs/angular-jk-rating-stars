@@ -67,7 +67,7 @@
   }
 
   angular
-    .module('angular-star-rating')
+    .module('angular-star-ratings')
     .controller('RatingStarsController', [
       '$attrs', '$timeout',
       RatingStarsController

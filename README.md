@@ -7,37 +7,37 @@ Demo : https://embed.plnkr.co/q7pgHz/
 ## Install :
 
 ### npm
-`npm install angular-star-rating`
+`npm install angular-star-ratings`
 
 ### bower
-`bower install angular-star-rating`
+`bower install angular-star-ratings`
 
 ## Usage :
 
- - Add `jk-rating-stars.js` to your index file:
+ - Add `angular-star-ratings.js` to your index file:
 ```html
 <script src="angular.js"></script>
-<script src="jk-rating-stars.js"></script>
+<script src="angular-star-ratings.js"></script>
 ```
 
- - Add `jk-rating-stars.css` to your index file:
+ - Add `angular-star-ratings.css` to your index file:
 ```html
-<link href="jk-rating-stars.css" rel="stylesheet" type="text/css" />
+<link href="angular-star-ratings.css" rel="stylesheet" type="text/css" />
 ```
  - Add the google material icons
 ```html
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ```
 
- - Add a dependency to the `angular-star-rating` module in your application.
+ - Add a dependency to the `angular-star-ratings` module in your application.
 ```js
-angular.module('MyApp', ['angular-star-rating']);
+angular.module('MyApp', ['angular-star-ratings']);
 ```
 
- - Add a `jk-rating-stars` tag to your html, set the amount of stars and bind a variable that will holds the selected value. If the maxRating variable is not set, we use the default of 5.
+ - Add a `angular-star-ratings` tag to your html, set the amount of stars and bind a variable that will holds the selected value. If the maxRating variable is not set, we use the default of 5.
 ```html
-<jk-rating-stars max-rating="8" rating="ctrl.rating" read-only="ctrl.readOnly" on-rating="ctrl.onRating(rating)" >
-</jk-rating-stars>
+<angular-star-ratings max-rating="8" rating="ctrl.rating" read-only="ctrl.readOnly" on-rating="ctrl.onRating(rating)" >
+</angular-star-ratings>
 ```
 
 ## TODO :

@@ -1,5 +1,5 @@
 {
-  "name": "angular-star-rating",
+  "name": "angular-star-ratings",
   "description": "Amazing rating stars directive for angular material",
   "main": "",
   "authors": [
@@ -14,7 +14,7 @@
     "stars",
     "rating-stars"
   ],
-  "homepage": "https://github.com/juank11memphis/angular-star-rating",
+  "homepage": "https://github.com/juank11memphis/angular-star-ratings",
   "moduleType": [
     "globals"
   ],

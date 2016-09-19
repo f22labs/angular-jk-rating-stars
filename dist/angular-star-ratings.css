@@ -1,0 +1,11 @@
+.angular-star-ratings-container .button {
+  cursor: pointer; }
+  .angular-star-ratings-container .button .material-icons {
+    font-size: 30px; }
+
+.angular-star-ratings-container .star-button {
+  text-shadow: 0.06em .04em #000000; }
+  .angular-star-ratings-container .star-button.star-on .material-icons {
+    color: #EE9A00; }
+  .angular-star-ratings-container .star-button.star-off .material-icons {
+    color: #ddd; }
